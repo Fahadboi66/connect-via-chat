@@ -61,7 +61,7 @@ export default function ChatList() {
           />
         </div>
         {isLoading && <p>Loading...</p>}
-        {isError && <div className="flex flex-col items-center"><p className="text-center">{error.data.message}</p> <button className="bg-slate-950 px-3 py-2 rounded mt-3 text-white" onClick={handleLoginRedirect}>Login</button></div>}
+        {isError && <div className="flex flex-col items-center"><p className="text-center">{error.data.message}</p></div>}
         {!isLoading && !isError && chatList.length === 0 && <p>No chats found.</p>}
         {!isLoading &&
           !isError &&
